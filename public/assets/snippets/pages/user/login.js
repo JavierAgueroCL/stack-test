@@ -180,10 +180,10 @@ var SnippetLogin = function() {
 
             form.ajaxSubmit({
                 url: '',
-                success: function(response, status, xhr, $form) { 
+                success: function(response, status, xhr, $form) {
                 	// similate 2s delay
                 	setTimeout(function() {
-                		btn.removeClass('m-loader m-loader--right m-loader--light').attr('disabled', false); // remove 
+                		btn.removeClass('m-loader m-loader--right m-loader--light').attr('disabled', false); // remove
 	                    form.clearForm(); // clear form
 	                    form.validate().resetForm(); // reset validation states
 
@@ -205,7 +205,7 @@ var SnippetLogin = function() {
         // public functions
         init: function() {
             handleFormSwitch();
-            handleSignInFormSubmit();
+            //handleSignInFormSubmit();
             handleSignUpFormSubmit();
             handleForgetPasswordFormSubmit();
         }
