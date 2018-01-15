@@ -7,11 +7,12 @@
 	<meta name="keywords" content="admin dashboard, admin, flat, flat ui, ui kit, app, web app, responsive">
 	<link rel="shortcut icon" href="img/ico/favicon.png">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-	<title>{{ config('app.name', 'Laravel') }}</title>
+	<title>{{ config('app.name') }}</title>
 
 	<!-- Base Styles -->
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/style-responsive.css') }}" rel="stylesheet">
+	<link href="{{ asset('js/toastr-master/toastr.css') }}" rel="stylesheet" type="text/css" />
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="{{ asset('js/html5shiv.min.js') }}"></script>
@@ -27,13 +28,14 @@
 		<img src="{{ asset('img/login_logo.png') }}" alt=""/>
 	</div>
 
-	<h2 class="form-heading">Entrar</h2>
+	<h2 class="form-heading">{{ config('app.name', 'Laravel') }} - {{ __('auth.entrar') }}</h2>
 	<div class="container log-row">
 	         <form class="form-horizontal form-signin" method="POST" action="{{ route('login') }}">
 	           <div class="login-wrap">
 	             {{ csrf_field() }}
 	             <input type="text" class="form-control" placeholder="RUT Empresa" autofocus>
 	             <input type="text" name="email" class="form-control" placeholder="Usuario" autofocus>
+
 	             <div class="{{ $errors->has('password') ? ' has-error' : '' }}">
 	             <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" required>
 	               @if ($errors->has('password'))
@@ -43,7 +45,7 @@
 	               @endif
 	             </div>
 
-	           <button class="btn btn-lg btn-success btn-block" type="submit">ENTRAR</button>
+	           <button class="btn btn-lg btn-success btn-block" type="submit">{{ __('auth.entrar') }}</button>
 				  <label class="checkbox-custom check-success">
 	               <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }} id="checkbox1"> <label for="checkbox1">Recordarme</label>
 	               <a class="pull-right" data-toggle="modal" href="{{ route('password.request') }}">¿Olvidó la contraseña?</a>
@@ -62,10 +64,17 @@
 	</div>
 
 	<!--jquery-1.10.2.min-->
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
 	<!--Bootstrap Js-->
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jrespond.min.js"></script>
+	<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('js/jrespond.min.js') }}"></script>
+	<!--toastr-->
+	<script src="{{ asset('js/toastr-master/toastr.js') }}"></script>
+	<script src="{{ asset('js/toastr-init.js') }}"></script>
 
+	<script src="{{ asset('js/pages/login.js') }}"></script>
+	@if ($errors->has('email'))
+		<script>toastr.error('{{ $errors->first('email') }}', 'Error de autenticación!')</script>
+	@endif
 	</body>
 </html>
