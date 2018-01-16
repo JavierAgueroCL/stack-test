@@ -46,10 +46,10 @@
 							<form class="m-login__form m-form" action="{{ route('login') }}" method="POST">
 								{{ csrf_field() }}
 								<div class="form-group m-form__group">
-									<input class="form-control m-input"   type="text" placeholder="RUT Empresa" name="rut_empresa" autocomplete="off">
+									<input class="form-control m-input"   type="text" placeholder="RUT Empresa" name="rut_empresa" autofocus>
 								</div>
 								<div class="form-group m-form__group">
-									<input class="form-control m-input"   type="text" placeholder="Email" name="email" autocomplete="off">
+									<input class="form-control m-input"   type="text" placeholder="Email" name="email" >
 								</div>
 								<div class="form-group m-form__group {{ $errors->has('password') ? ' has-error' : '' }}">
 									<input class="form-control m-input m-login__form-input--last" type="password" placeholder="Contraseña" name="password">
@@ -93,7 +93,8 @@
 		<script src="{{ asset('assets/vendors/base/vendors.bundle.js') }}" type="text/javascript"></script>
 		<script src="{{ asset('assets/demo/default/base/scripts.bundle.js') }}" type="text/javascript"></script>
 		<!--end::Base Scripts -->
-        <!--begin::Page Snippets -->
+      <!--begin::Page Snippets -->
+		<script src="{{ asset('assets/app/js/NinjaRut.min.js') }}" type="text/javascript"></script>
 		<script src="{{ asset('assets/snippets/pages/user/login.js') }}" type="text/javascript"></script>
 		<!--end::Page Snippets -->
 		@if ($errors->has('email'))
