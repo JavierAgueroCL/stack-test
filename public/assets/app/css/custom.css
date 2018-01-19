@@ -1,0 +1,19 @@
+/* ANCHO DE LAS "ACCIONES RAPIDAS" DEL QUICK SIDEBAR */
+@media (min-width: 993px) {
+.m-header-menu .m-menu__nav > .m-menu__item .m-menu__submenu {
+		width: 317px;
+	}
+}
+
+/* Tamaño de los Tags de Acciones Rapidas */
+.document-tag {
+	text-align: center;
+	min-width: 42px;
+}
+/* Etiliza el boton de Aplicaciones */
+.aplicacion {
+	border: 1px solid;
+	border-radius: 44px;
+	padding: 18px !important;
+	height: calc(100% - 32px) !important;
+}
