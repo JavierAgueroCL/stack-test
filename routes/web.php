@@ -12,4 +12,7 @@
 */
 
 Auth::routes();
-Route::get('/', 'DashboardController@index')->name('Dashboard');
+
+Route::group(['middleware' => 'xml'], function() {
+	Route::get('/', 'DashboardController@index')->name('Dashboard');
+});

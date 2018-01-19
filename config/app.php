@@ -179,6 +179,8 @@ return [
 
         //Recaptcha
         Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
+		  //Conversor de XML
+		  XmlMiddleware\XmlRequestServiceProvider::class,
 
     ],
 
