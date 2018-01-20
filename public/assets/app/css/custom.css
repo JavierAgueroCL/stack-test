@@ -17,3 +17,7 @@
 	padding: 18px !important;
 	height: calc(100% - 32px) !important;
 }
+/* Fix del Height en navegacion */
+.m-nav.m-nav--inline > .m-nav__item {
+	height: 7% !important;
+}

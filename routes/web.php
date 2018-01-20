@@ -16,3 +16,7 @@ Auth::routes();
 Route::group(['middleware' => 'xml'], function() {
 	Route::get('/', 'DashboardController@index')->name('Dashboard');
 });
+
+Route::prefix('maestros')->group(function () {
+	Route::get('clientes', 'ClientesController@index')->name('clientes')->middleware('auth');
+});

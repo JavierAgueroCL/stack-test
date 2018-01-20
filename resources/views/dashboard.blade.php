@@ -30,7 +30,7 @@
 					<div class="m-widget4">
 						<div class="m-widget4__item">
 							<div class="m-widget4__img m-widget4__img--logo">
-								<img src="./assets/app/media/img/client-logos/logo5.png" alt="">
+								<img src="{{ asset('assets/app/media/img/client-logos/logo5.png') }}" alt="">
 							</div>
 							<div class="m-widget4__info">
 								<span class="m-widget4__title">
@@ -46,7 +46,7 @@
 						</div>
 						<div class="m-widget4__item">
 							<div class="m-widget4__img m-widget4__img--logo">
-								<img src="./assets/app/media/img/client-logos/logo4.png" alt="">
+								<img src="{{ asset('assets/app/media/img/client-logos/logo4.png') }}" alt="">
 							</div>
 							<div class="m-widget4__info">
 								<span class="m-widget4__title">
@@ -62,7 +62,7 @@
 						</div>
 						<div class="m-widget4__item">
 							<div class="m-widget4__img m-widget4__img--logo">
-								<img src="./assets/app/media/img/client-logos/logo3.png" alt="">
+								<img src="{{ asset('assets/app/media/img/client-logos/logo3.png') }}" alt="">
 							</div>
 							<div class="m-widget4__info">
 								<span class="m-widget4__title">
@@ -78,7 +78,7 @@
 						</div>
 						<div class="m-widget4__item">
 							<div class="m-widget4__img m-widget4__img--logo">
-								<img src="./assets/app/media/img/client-logos/logo2.png" alt="">
+								<img src="{{ asset('assets/app/media/img/client-logos/logo2.png') }}" alt="">
 							</div>
 							<div class="m-widget4__info">
 								<span class="m-widget4__title">
@@ -94,7 +94,7 @@
 						</div>
 						<div class="m-widget4__item">
 							<div class="m-widget4__img m-widget4__img--logo">
-								<img src="./assets/app/media/img/client-logos/logo1.png" alt="">
+								<img src="{{ asset('assets/app/media/img/client-logos/logo1.png') }}" alt="">
 							</div>
 							<div class="m-widget4__info">
 								<span class="m-widget4__title">
