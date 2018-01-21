@@ -2,7 +2,7 @@
 	<!-- begin::Head -->
 	<head>
 		<meta charset="utf-8" />
-		<title>{{ config('app.name') }}</title>
+		<title>{{ config('app.name') }} | @yield('title', 'Welcome')</title>
 		<meta name="description" content="Latest updates and statistic charts">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -170,8 +170,9 @@
 		<!--begin::Page Vendors -->
 		<script src="{{ asset('assets/vendors/custom/fullcalendar/fullcalendar.bundle.js') }}" type="text/javascript"></script>
 		<!--end::Page Vendors -->
-				<!--begin::Page Snippets -->
+		<!--begin::Page Snippets -->
 		<script src="{{ asset('assets/app/js/dashboard.js') }}" type="text/javascript"></script>
+		@yield('scripts')
 		<!--end::Page Snippets -->
 	</body>
 	<!-- end::Body -->

@@ -23,7 +23,7 @@ var DatatableRecordSelectionDemo = function() {
 			theme: 'default', // datatable theme
 			class: '', // custom wrapper class
 			scroll: true, // enable/disable datatable scroll both horizontal and vertical when needed.
-			height: 550, // datatable's body's fixed height
+			height: 700, // datatable's body's fixed height
 			footer: false // display/hide footer
 		},
 
@@ -106,18 +106,18 @@ var DatatableRecordSelectionDemo = function() {
 					return '\
 						<div class="dropdown ' + dropup + '">\
 							<a href="#" class="btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" data-toggle="dropdown">\
-                                <i class="la la-ellipsis-h"></i>\
-                            </a>\
+                        <i class="la la-ellipsis-h"></i>\
+                     </a>\
 						  	<div class="dropdown-menu dropdown-menu-right">\
 						    	<a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>\
 						    	<a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>\
-						    	<a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>\
+						    	<a class="dropdown-item" href="#"><i class="la la-print"></i> Ver todas las facturas</a>\
 						  	</div>\
 						</div>\
-						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="Edit details">\
+						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="Editar">\
 							<i class="la la-edit"></i>\
 						</a>\
-						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill" title="Delete">\
+						<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill" title="Borrar">\
 							<i class="la la-trash"></i>\
 						</a>\
 					';

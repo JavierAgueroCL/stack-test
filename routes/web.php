@@ -18,5 +18,5 @@ Route::group(['middleware' => 'xml'], function() {
 });
 
 Route::prefix('maestros')->group(function () {
-	Route::get('clientes', 'ClientesController@index')->name('clientes')->middleware('auth');
+	Route::get('clientes', 'ClientesController@index')->name('maestros.clientes')->middleware('auth');
 });

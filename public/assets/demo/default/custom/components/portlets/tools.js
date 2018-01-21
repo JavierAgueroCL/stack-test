@@ -19,13 +19,13 @@ var PortletTools = function () {
         portlet.on('afterCollapse', function(portlet) {
             setTimeout(function() {
                 toastr.warning('Before collapse event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         portlet.on('beforeExpand', function(portlet) {
             setTimeout(function() {
                 toastr.info('Before expand event fired!');
-            }, 100);  
+            }, 100);
         });
 
         portlet.on('afterExpand', function(portlet) {
@@ -44,7 +44,7 @@ var PortletTools = function () {
         portlet.on('afterRemove', function(portlet) {
             setTimeout(function() {
                 toastr.warning('After remove event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         //== Reload event handlers
@@ -84,7 +84,7 @@ var PortletTools = function () {
             var scrollable = portlet.getBody().find('> .m-scrollable');
 
             scrollable.css('height', scrollable.data('original-height'));
-            scrollable.data('max-height', scrollable.data('original-height')); 
+            scrollable.data('max-height', scrollable.data('original-height'));
             mApp.initScroller(scrollable, {});
         });
     }
@@ -104,13 +104,13 @@ var PortletTools = function () {
         portlet.on('afterCollapse', function(portlet) {
             setTimeout(function() {
                 toastr.warning('Before collapse event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         portlet.on('beforeExpand', function(portlet) {
             setTimeout(function() {
                 toastr.info('Before expand event fired!');
-            }, 100);  
+            }, 100);
         });
 
         portlet.on('afterExpand', function(portlet) {
@@ -129,7 +129,7 @@ var PortletTools = function () {
         portlet.on('afterRemove', function(portlet) {
             setTimeout(function() {
                 toastr.warning('After remove event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         //== Reload event handlers
@@ -167,13 +167,13 @@ var PortletTools = function () {
         portlet.on('afterCollapse', function(portlet) {
             setTimeout(function() {
                 toastr.warning('Before collapse event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         portlet.on('beforeExpand', function(portlet) {
             setTimeout(function() {
                 toastr.info('Before expand event fired!');
-            }, 100);  
+            }, 100);
         });
 
         portlet.on('afterExpand', function(portlet) {
@@ -192,7 +192,7 @@ var PortletTools = function () {
         portlet.on('afterRemove', function(portlet) {
             setTimeout(function() {
                 toastr.warning('After remove event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         //== Reload event handlers
@@ -202,7 +202,7 @@ var PortletTools = function () {
             mApp.block(portlet.getSelf(), {
                 type: 'loader',
                 state: 'success',
-                message: 'Please wait...'
+                message: 'Cargando...'
             });
 
             // update the content here
@@ -230,11 +230,11 @@ var PortletTools = function () {
             var scrollable = portlet.getBody().find('> .m-scrollable');
 
             scrollable.css('height', scrollable.data('original-height'));
-            scrollable.data('max-height', scrollable.data('original-height')); 
+            scrollable.data('max-height', scrollable.data('original-height'));
             mApp.initScroller(scrollable, {});
         });
     }
- 
+
     //== Demo 4
     var demo4 = function() {
         // This portlet is lazy initialized using data-portlet="true" attribute. You can access to the portlet object as shown below and override its behavior
@@ -250,13 +250,13 @@ var PortletTools = function () {
         portlet.on('afterCollapse', function(portlet) {
             setTimeout(function() {
                 toastr.warning('Before collapse event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         portlet.on('beforeExpand', function(portlet) {
             setTimeout(function() {
                 toastr.info('Before expand event fired!');
-            }, 100);  
+            }, 100);
         });
 
         portlet.on('afterExpand', function(portlet) {
@@ -275,7 +275,7 @@ var PortletTools = function () {
         portlet.on('afterRemove', function(portlet) {
             setTimeout(function() {
                 toastr.warning('After remove event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         //== Reload event handlers
@@ -285,7 +285,7 @@ var PortletTools = function () {
             mApp.block(portlet.getSelf(), {
                 type: 'loader',
                 state: 'brand',
-                message: 'Please wait...'
+                message: 'Cargando...'
             });
 
             // update the content here
@@ -313,7 +313,7 @@ var PortletTools = function () {
             var scrollable = portlet.getBody().find('> .m-scrollable');
 
             scrollable.css('height', scrollable.data('original-height'));
-            scrollable.data('max-height', scrollable.data('original-height')); 
+            scrollable.data('max-height', scrollable.data('original-height'));
             mApp.initScroller(scrollable, {});
         });
     }
@@ -333,13 +333,13 @@ var PortletTools = function () {
         portlet.on('afterCollapse', function(portlet) {
             setTimeout(function() {
                 toastr.warning('Before collapse event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         portlet.on('beforeExpand', function(portlet) {
             setTimeout(function() {
                 toastr.info('Before expand event fired!');
-            }, 100);  
+            }, 100);
         });
 
         portlet.on('afterExpand', function(portlet) {
@@ -358,7 +358,7 @@ var PortletTools = function () {
         portlet.on('afterRemove', function(portlet) {
             setTimeout(function() {
                 toastr.warning('After remove event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         //== Reload event handlers
@@ -368,7 +368,7 @@ var PortletTools = function () {
             mApp.block(portlet.getSelf(), {
                 type: 'loader',
                 state: 'brand',
-                message: 'Please wait...'
+                message: 'Cargando...'
             });
 
             // update the content here
@@ -404,13 +404,13 @@ var PortletTools = function () {
         portlet.on('afterCollapse', function(portlet) {
             setTimeout(function() {
                 toastr.warning('Before collapse event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         portlet.on('beforeExpand', function(portlet) {
             setTimeout(function() {
                 toastr.info('Before expand event fired!');
-            }, 100);  
+            }, 100);
         });
 
         portlet.on('afterExpand', function(portlet) {
@@ -429,7 +429,7 @@ var PortletTools = function () {
         portlet.on('afterRemove', function(portlet) {
             setTimeout(function() {
                 toastr.warning('After remove event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         //== Reload event handlers
@@ -439,7 +439,7 @@ var PortletTools = function () {
             mApp.block(portlet.getSelf(), {
                 type: 'loader',
                 state: 'brand',
-                message: 'Please wait...'
+                message: 'Cargando...'
             });
 
             // update the content here
@@ -475,13 +475,13 @@ var PortletTools = function () {
         portlet.on('afterCollapse', function(portlet) {
             setTimeout(function() {
                 toastr.warning('Before collapse event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         portlet.on('beforeExpand', function(portlet) {
             setTimeout(function() {
                 toastr.info('Before expand event fired!');
-            }, 100);  
+            }, 100);
         });
 
         portlet.on('afterExpand', function(portlet) {
@@ -500,7 +500,7 @@ var PortletTools = function () {
         portlet.on('afterRemove', function(portlet) {
             setTimeout(function() {
                 toastr.warning('After remove event fired!');
-            }, 2000);            
+            }, 2000);
         });
 
         //== Reload event handlers
@@ -510,7 +510,7 @@ var PortletTools = function () {
             mApp.block(portlet.getSelf(), {
                 type: 'loader',
                 state: 'brand',
-                message: 'Please wait...'
+                message: 'Cargando...'
             });
 
             // update the content here

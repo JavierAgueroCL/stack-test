@@ -1,5 +1,7 @@
 @extends('layouts.dashboard')
 
+@section('title', 'Dashboard')
+
 @section('content')
 <!-- BEGIN: Subheader -->
 <div class="m-subheader ">

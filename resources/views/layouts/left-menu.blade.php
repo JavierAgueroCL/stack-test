@@ -30,7 +30,7 @@
 					<span class="m-menu__arrow"></span>
 					<ul class="m-menu__subnav">
 						<li class="m-menu__item  m-menu__item--submenu {{ MenuHelper::submenu('clientes') }}" aria-haspopup="true" data-menu-submenu-toggle="hover">
-							<a href="{{ route('clientes') }}" class="m-menu__link m-menu__toggle">
+							<a href="{{ route('maestros.clientes') }}" class="m-menu__link m-menu__toggle">
 								<i class="m-menu__link-bullet m-menu__link-bullet--dot">
 									<span></span>
 								</i>
