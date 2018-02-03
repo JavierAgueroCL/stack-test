@@ -14,7 +14,7 @@
 Auth::routes();
 
 Route::group(['middleware' => 'xml'], function() {
-	Route::get('/', 'DashboardController@index')->name('Dashboard');
+	Route::get('/', 'DashboardController@index')->name('dashboard');
 });
 
 Route::prefix('maestros')->group(function () {

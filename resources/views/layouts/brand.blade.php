@@ -1,7 +1,7 @@
 <div class="m-stack__item m-brand  m-brand--skin-dark ">
 	<div class="m-stack m-stack--ver m-stack--general">
 		<div class="m-stack__item m-stack__item--middle m-brand__logo">
-			<a href="{{ route('Dashboard') }}" class="m-brand__logo-wrapper">
+			<a href="{{ route('dashboard') }}" class="m-brand__logo-wrapper">
 				<img alt="{{ config('app.name') }}" src="{{ asset('assets/demo/default/media/img/logo/logo_default_dark.png') }}"/>
 			</a>
 		</div>
