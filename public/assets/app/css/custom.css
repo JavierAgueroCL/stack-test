@@ -9,13 +9,14 @@
 	text-align: center;
 	min-width: 42px;
 }
-/* Etiliza el boton de Aplicaciones */
+/* Estiliza el boton de Aplicaciones
 .aplicacion {
 	border: 1px solid;
 	border-radius: 44px;
 	padding: 18px !important;
 	height: calc(100% - 32px) !important;
 }
+*/
 /* Fix del Height en navegacion */
 .m-nav.m-nav--inline > .m-nav__item {
 	height: 7% !important;
