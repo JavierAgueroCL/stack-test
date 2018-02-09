@@ -24,13 +24,14 @@
 .m-nav.m-nav--inline {
 	height: auto !important;
 }
-/* padding del cotenido general del dashboard  */
+/* padding del cotenido general del dashboard
 .m-body .m-content {
     padding: 10px 30px;
 }
 .m-subheader {
     padding: 8px 30px 0 30px;
 }
+*/
 /* portets de los datatables */
 .m-portlet .m-portlet__body {
     padding: 0.2rem 2.2rem 2.2rem 2.2rem;

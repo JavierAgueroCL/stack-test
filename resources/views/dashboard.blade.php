@@ -128,3 +128,7 @@
 </div>
 
 @endsection
+
+@section('scripts')
+<script src="{{ asset('assets/app/js/dashboard.js') }}" type="text/javascript"></script>
+@endsection
