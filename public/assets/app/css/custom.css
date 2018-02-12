@@ -36,6 +36,25 @@
 .m-portlet .m-portlet__body {
     padding: 0.2rem 2.2rem 2.2rem 2.2rem;
 }
+/* Sobre escribe el padding del menu superior */
+.m-header-menu .m-menu__nav > .m-menu__item.m-menu__item--tabs > .m-menu__link {
+	padding: 0 21px !important;
+}
+
+/* Menus desactivados temporalmente */
+li.m-menu__item.menu-disabled:before a:hover {
+    content: 'Desactivado';
+    display: block;
+    text-align: center;
+    margin-bottom: -37px;
+    background: #000;
+    z-index: 9999;
+    position: relative;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 6px;
+}
+
 /* Spacers */
 .spacer {
 	display: block;
