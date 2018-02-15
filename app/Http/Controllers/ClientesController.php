@@ -22,7 +22,7 @@ class ClientesController extends Controller
      */
     public function index()
     {
-        return view('clientes');
+        return view('maestros/clientes');
     }
     /**
      * Show the form for creating a new resource.
@@ -53,7 +53,7 @@ class ClientesController extends Controller
      */
     public function show($id = null)
     {
-        return view('clientes-editar');
+        return view('maestros/clientes-editar');
     }
 
     /**

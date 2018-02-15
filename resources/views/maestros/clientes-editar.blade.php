@@ -146,26 +146,29 @@
 										<div class="form-group  m-form__group row">
 											<div data-repeater-list="" class="col-lg-12">
 												<div data-repeater-item class="row m--margin-bottom-10">
-													<div class="col-lg-4">
+													<div class="col-lg-3">
 														<div class="m-input-icon m-input-icon--right">
-															<input type="text" class="form-control m-input" placeholder="Sucursal">
-															<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la la-map-marker"></i></span></span>
+															<input type="text" class="form-control m-input" placeholder="Sucursal" disabled>
+															<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la	la-briefcase"></i></span></span>
 														</div>
 													</div>
 													<div class="col-lg-4">
 														<div class="m-input-icon m-input-icon--right">
-															<input type="text" class="form-control m-input" placeholder="Dirección">
+															<input type="text" class="form-control m-input" placeholder="Dirección" disabled>
 															<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la la-map-marker"></i></span></span>
 														</div>
 													</div>
 													<div class="col-lg-3">
 														<div class="m-input-icon m-input-icon--right">
-															<input type="text" class="form-control m-input" placeholder="Región">
-															<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la la-map-marker"></i></span></span>
+															<input type="text" class="form-control m-input" placeholder="Ciudad" disabled>
+															<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la la-car"></i></span></span>
 														</div>
 													</div>
-													<div class="col-lg-1">
-														<a href="#" data-repeater-delete="" class="btn btn-danger m-btn m-btn--icon m-btn--icon-only">
+													<div class="col-lg-2">
+														<button type="button" class="btn btn-warning delete-button" data-toggle="modal" data-target="#editar_direccion" >
+															<i class="la la-edit"></i>
+														</button>
+														<a data-repeater-delete="" class="btn hand btn-danger m-btn delete-button">
 															<i class="la la-remove"></i>
 														</a>
 													</div>
@@ -185,8 +188,6 @@
 											</div>
 										</div>
 									</div>
-
-
                 </div>
             </div>
         </div>
@@ -210,10 +211,10 @@
             </div>
         </div>
         <!--end::Item-->
-
     </div>
 	</div>
 </div>
+
 @endsection
 
 @section('scripts')
@@ -221,3 +222,53 @@
 <script src="{{ asset('assets/app/js/repeater.js') }}" type="text/javascript"></script>
 <script src="{{ asset('assets/app/js/sweetalert.js') }}" type="text/javascript"></script>
 @endsection
+
+<!-- Modal para agregar/editar direccion -->
+<div class="modal fade" id="editar_direccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">
+					Editar/Agregar dirección
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">
+						&times;
+					</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group  m-form__group row">
+						<div class="col-lg-4">
+							<div class="m-input-icon m-input-icon--right">
+								<input type="text" class="form-control m-input" placeholder="Sucursal"d>
+								<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la	la-briefcase"></i></span></span>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="m-input-icon m-input-icon--right">
+								<input type="text" class="form-control m-input" placeholder="Región">
+								<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la la-map-marker"></i></span></span>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="m-input-icon m-input-icon--right">
+								<input type="text" class="form-control m-input" placeholder="Ciudad">
+								<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la la-car"></i></span></span>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">
+					Cancelar
+				</button>
+				<button type="button" class="btn btn-primary">
+					Guardar dirección
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FIN Modal para agregar/editar direccion -->
