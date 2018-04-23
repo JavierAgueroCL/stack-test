@@ -209,7 +209,7 @@
                 </span>
               </a>
             </li>
-            <li class="m-menu__item {{ MenuHelper::submenu('clientes') }}"  data-redirect="true" aria-haspopup="true">
+            <li class="m-menu__item {{ MenuHelper::submenu('productos') }}"  data-redirect="true" aria-haspopup="true">
               <a  href="{{ route('maestros.productos') }}" class="m-menu__link ">
                 <i class="m-menu__link-icon flaticon-analytics"></i>
                 <span class="m-menu__link-text">
