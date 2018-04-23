@@ -70,3 +70,63 @@ li.m-menu__item.menu-disabled:before a:hover {
 .spacer-20 {
 	height: 20px;
 }
+.width-100 {
+	width: 100%;
+}
+
+
+
+
+.cargando {
+	opacity: 0.8 !important;
+	cursor: not-allowed !important;
+	pointer-events: none !important;
+}
+.cargando i {
+	-webkit-animation: rotating 2s linear infinite;
+	-moz-animation: rotating 2s linear infinite;
+	-ms-animation: rotating 2s linear infinite;
+	-o-animation: rotating 2s linear infinite;
+	animation: rotating 2s linear infinite;
+	content: "\f1bc" !important;
+	font-family: Flaticon !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	line-height: 1 !important;
+	text-decoration: inherit !important;
+	text-rendering: optimizeLegibility !important;
+	text-transform: none !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	-webkit-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

@@ -16,7 +16,7 @@
 <div class="m-content">
 
 	<div class="row">
-		<div class="col-xl-3">
+		<div class="col-xl-4">
 			 <!--begin:: Wiget de Divisas -->
 			<div class="m-portlet m-portlet--bordered-semi m-portlet--full-height ">
 				<div class="m-portlet__head">

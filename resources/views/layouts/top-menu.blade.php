@@ -209,8 +209,8 @@
                 </span>
               </a>
             </li>
-            <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-              <a  href="builder.html" class="m-menu__link ">
+            <li class="m-menu__item {{ MenuHelper::submenu('clientes') }}"  data-redirect="true" aria-haspopup="true">
+              <a  href="{{ route('maestros.productos') }}" class="m-menu__link ">
                 <i class="m-menu__link-icon flaticon-analytics"></i>
                 <span class="m-menu__link-text">
                   Productos y Servicios
@@ -251,7 +251,7 @@
       <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  data-menu-submenu-toggle="tab" aria-haspopup="true">
         <a  href="#" class="m-menu__link m-menu__toggle">
           <span class="m-menu__link-text">
-            Remuneraciones
+            Compras
           </span>
           <i class="m-menu__hor-arrow la la-angle-down"></i>
           <i class="m-menu__ver-arrow la la-angle-right"></i>
@@ -329,7 +329,7 @@
       <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  data-menu-submenu-toggle="tab" aria-haspopup="true">
         <a  href="#" class="m-menu__link m-menu__toggle">
           <span class="m-menu__link-text">
-            Compras
+            Ventas
           </span>
           <i class="m-menu__hor-arrow la la-angle-down"></i>
           <i class="m-menu__ver-arrow la la-angle-right"></i>
@@ -383,7 +383,7 @@
       <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  data-menu-submenu-toggle="tab" aria-haspopup="true">
         <a  href="#" class="m-menu__link m-menu__toggle">
           <span class="m-menu__link-text">
-            Ventas
+            Reportes
           </span>
           <i class="m-menu__hor-arrow la la-angle-down"></i>
           <i class="m-menu__ver-arrow la la-angle-right"></i>
@@ -426,89 +426,6 @@
           </ul>
         </div>
       </li>
-      <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  data-menu-submenu-toggle="tab" aria-haspopup="true">
-        <a  href="#" class="m-menu__link m-menu__toggle">
-          <span class="m-menu__link-text">
-            Contabilidad
-          </span>
-          <i class="m-menu__hor-arrow la la-angle-down"></i>
-          <i class="m-menu__ver-arrow la la-angle-right"></i>
-        </a>
-        <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
-          <span class="m-menu__arrow m-menu__arrow--adjust"></span>
-          <ul class="m-menu__subnav">
-            <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-              <a  href="inner.html" class="m-menu__link ">
-                <i class="m-menu__link-icon flaticon-settings-1"></i>
-                <span class="m-menu__link-text">
-                  Build Tools
-                </span>
-              </a>
-            </li>
-            <li class="m-menu__item "  aria-haspopup="true">
-              <a  href="builder.html" class="m-menu__link ">
-                <i class="m-menu__link-icon flaticon-imac"></i>
-                <span class="m-menu__link-text">
-                  Layout Builder
-                </span>
-              </a>
-            </li>
-            <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-              <a  href="inner.html" class="m-menu__link ">
-                <i class="m-menu__link-icon flaticon-paper-plane"></i>
-                <span class="m-menu__link-text">
-                  Documentatiion
-                </span>
-              </a>
-            </li>
-            <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
-              <a  href="inner2.html" class="m-menu__link ">
-                <i class="m-menu__link-icon flaticon-multimedia"></i>
-                <span class="m-menu__link-text">
-                  Reviews
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  data-menu-submenu-toggle="tab" aria-haspopup="true">
-        <a  href="#" class="m-menu__link m-menu__toggle">
-          <span class="m-menu__link-text">
-            Cuentas
-          </span>
-          <i class="m-menu__hor-arrow la la-angle-down"></i>
-          <i class="m-menu__ver-arrow la la-angle-right"></i>
-        </a>
-      </li>
-      <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  data-menu-submenu-toggle="tab" aria-haspopup="true">
-        <a  href="#" class="m-menu__link m-menu__toggle">
-          <span class="m-menu__link-text">
-            Inventario
-          </span>
-          <i class="m-menu__hor-arrow la la-angle-down"></i>
-          <i class="m-menu__ver-arrow la la-angle-right"></i>
-        </a>
-      </li>
-      <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  data-menu-submenu-toggle="tab" aria-haspopup="true">
-        <a  href="#" class="m-menu__link m-menu__toggle">
-          <span class="m-menu__link-text">
-            Contratos
-          </span>
-          <i class="m-menu__hor-arrow la la-angle-down"></i>
-          <i class="m-menu__ver-arrow la la-angle-right"></i>
-        </a>
-      </li>
-      <li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"  data-menu-submenu-toggle="tab" aria-haspopup="true">
-        <a  href="#" class="m-menu__link m-menu__toggle">
-          <span class="m-menu__link-text">
-            Comercial
-          </span>
-          <i class="m-menu__hor-arrow la la-angle-down"></i>
-          <i class="m-menu__ver-arrow la la-angle-right"></i>
-        </a>
-      </li>
-
     </ul>
   </div>
 </div>

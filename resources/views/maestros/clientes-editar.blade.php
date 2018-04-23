@@ -79,12 +79,12 @@
 													</div>
 													<div class="col-lg-4">
 														<div class="m-radio-inline">
-															<label class="m-radio m-radio--solid m-radio--state-success">
-																		<input type="radio" name="example_2" checked="" value="2"> Cliente
+															<label class="m-checkbox m-checkbox--solid m-checkbox--state-success">
+																		<input type="checkbox" name="example_2" checked="" value="2"> Cliente
 																		<span></span>
 																</label>
-																<label class="m-radio m-radio--solid m-radio--state-brand">
-																		<input type="radio" name="example_2" value="2"> Proveedor
+																<label class="m-checkbox m-checkbox--solid m-checkbox--state-brand">
+																		<input type="checkbox" name="example_2" value="2"> Proveedor
 																		<span></span>
 																</label>
 														</div>
@@ -177,9 +177,10 @@
 										</div>
 										<div class="row">
 											<div class="col">
-												<div data-repeater-create="" class="btn btn btn-primary m-btn m-btn--icon">
+
+												<div data-toggle="modal" data-target="#editar_direccion" class="btn btn btn-primary m-btn m-btn--icon">
 													<span>
-														<i class="la la-plus"></i>
+														<i class="la la-plus rotating"></i>
 														<span>
 															Agregar dirección
 														</span>
@@ -194,7 +195,7 @@
         <!--end::Item-->
 
         <!--begin::Item-->
-        <div class="m-accordion__item m-accordion__item--primary">
+        <!--div class="m-accordion__item m-accordion__item--primary">
             <div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_8_item_3_head" data-toggle="collapse" href="#m_accordion_6_item_3_body" aria-expanded="false">
                 <span class="m-accordion__item-icon"><i class="fa  flaticon-alert-2"></i></span>
                 <span class="m-accordion__item-title">Datos comerciales</span>
@@ -209,7 +210,7 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div-->
         <!--end::Item-->
     </div>
 	</div>
@@ -224,7 +225,7 @@
 @endsection
 
 <!-- Modal para agregar/editar direccion -->
-<div class="modal fade" id="editar_direccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" style="display: none;" id="editar_direccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -258,13 +259,20 @@
 								<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la la-car"></i></span></span>
 							</div>
 						</div>
+						<div class="spacer-20 spacer width-100"></div>
+						<div class="col-lg-4">
+							<div class="m-input-icon m-input-icon--right">
+								<input type="email" class="form-control m-input" placeholder="alguien@algo.com">
+								<span class="m-input-icon__icon m-input-icon__icon--right"><span><i class="la la-car"></i></span></span>
+							</div>
+						</div>
 					</div>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">
 					Cancelar
 				</button>
-				<button type="button" class="btn btn-primary">
+				<button type="button" class="btn btn-primary" data-dismiss="modal" data-repeater-create="repetidor" >
 					Guardar dirección
 				</button>
 			</div>

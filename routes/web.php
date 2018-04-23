@@ -20,4 +20,6 @@ Route::group(['middleware' => 'xml'], function() {
 Route::prefix('maestros')->group(function () {
 	Route::get('clientes', 'ClientesController@index')->name('maestros.clientes')->middleware('auth');
 	Route::get('clientes/editar', 'ClientesController@show')->name('maestros.clientes.editar')->middleware('auth');
+
+	Route::get('productos', 'ProductosController@index')->name('maestros.productos')->middleware('auth');
 });
