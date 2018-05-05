@@ -1,7 +1,9 @@
 //== Class definition
 
 var DatatableRecordSelectionDemo = function() {
-	//== Private functions
+	//== Private functions http://localhost/api/clientes
+	// http://localhost/api/clientes
+	// https://keenthemes.com/metronic/preview/inc/api/datatables/demos/default.php
 
 	var options = {
 		// datasource definition
@@ -9,7 +11,7 @@ var DatatableRecordSelectionDemo = function() {
 			type: 'remote',
 			source: {
 				read: {
-					url: 'https://keenthemes.com/metronic/preview/inc/api/datatables/demos/default.php',
+					url: 'http://localhost/api/clientes',
 				},
 			},
 			pageSize: 10,
